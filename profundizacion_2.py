@@ -39,20 +39,19 @@ en la lista pueden usar el método nativo de list "count"
 # ya elaborada en el ejercicio anterior
 def lista_aleatoria (inicio, fin, cantidad):
     lista_aleatoria = []
-    for i in range(inicio, fin, cantidad):
+    for i in range(cantidad):
         numero = random.randint(inicio, fin)
         lista_aleatoria.append(numero)
     return lista_aleatoria
-
 # --------------------------------
 
 # --------------------------------
 # Aquí dentro definir la función contar
 def contar (lista_aleatoria):
-    cantidad = []
+    cantidad_veces = []
     for i in lista_aleatoria:
-        cantidad = count(lista_aleatoria)
-    return cantidad
+        cantidad_veces = count(lista_aleatoria)
+    return cantidad_veces
 # --------------------------------
 
 if __name__ == '__main__':
